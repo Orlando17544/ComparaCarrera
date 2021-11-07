@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/carrerasFragment"
+        android:icon="@drawable/ic_school"
+        android:title="Carreras"/>
+    <item
+        android:id="@+id/contactoFragment"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favoritos"
+        android:iconTint="@android:color/black"/>
+    <item
+        android:id="@+id/acercaFragment"
+        android:icon="@drawable/ic_info"
+        android:title="Acerca"/>
+</menu>

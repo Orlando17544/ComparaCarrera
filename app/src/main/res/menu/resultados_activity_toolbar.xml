@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/agregarCarrera"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favorite"
+        app:showAsAction="always"
+        android:contentDescription="Con la herramienta agregar puedes añadir la carrera que desees a tus favoritos."/>
+</menu>

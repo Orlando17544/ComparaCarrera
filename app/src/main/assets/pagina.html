@@ -1,0 +1,120 @@
+<html>
+<head>
+    <h1 id="titulo">Título</h1>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+    document.getElementById("titulo").innerHTML = Android.getCampoDetallado();
+
+    var consultaHistogramaSalario = Android.getConsultaHistogramaSalario();
+    var consultaTendenciaSalario = Android.getConsultaTendenciaSalario();
+    var consultaMapaSalario = Android.getConsultaMapaSalario();
+
+      // Load Charts and the corechart package.
+      google.charts.load('48', {'packages':['corechart', 'geochart'], 'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'});
+
+      if (consultaHistogramaSalario)
+        google.charts.setOnLoadCallback(drawHistogramaSalarios);
+
+      if (consultaTendenciaSalario)
+        google.charts.setOnLoadCallback(drawTendenciaSalarios);
+
+      if (consultaMapaSalario)
+        google.charts.setOnLoadCallback(drawMapaSalarios);
+
+      function drawHistogramaSalarios() {
+
+      var queryString = encodeURIComponent(consultaHistogramaSalario);
+
+      var query = new google.visualization.Query(
+          'https://docs.google.com/spreadsheets/d/1ot4VJqenqtRGdI5QCImaVCUEiN_pRlWv/gviz/tq?gid=1949545316&headers=1&tq=' + queryString);
+      query.send(handleQueryResponseHistograma);
+    }
+
+    function handleQueryResponseHistograma(response) {
+      if (response.isError()) {
+        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+
+      var data = response.getDataTable();
+
+      var options = {title:'Histograma de salarios',
+                       width:400,
+                       height:300};
+
+      var chart = new google.visualization.Histogram(document.getElementById('histograma_salarios_chart_div'));
+      chart.draw(data, options);
+    }
+
+      function drawTendenciaSalarios() {
+
+        var queryString = encodeURIComponent(consultaTendenciaSalario);
+
+      var query = new google.visualization.Query(
+          'https://docs.google.com/spreadsheets/d/1ot4VJqenqtRGdI5QCImaVCUEiN_pRlWv/gviz/tq?gid=1949545316&headers=1&tq=' + queryString);
+      query.send(handleQueryResponseTendencia);
+    }
+
+    function handleQueryResponseTendencia(response) {
+      if (response.isError()) {
+        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+
+      var data = response.getDataTable();
+
+        var options = {title:'Tendencia de salarios',
+                       width:400,
+                       height:300};
+
+        var chart = new google.visualization.LineChart(document.getElementById('tendencia_salarios_chart_div'));
+        chart.draw(data, options);
+      }
+
+
+    function drawMapaSalarios() {
+
+      var queryString = encodeURIComponent(consultaMapaSalario);
+
+      var query = new google.visualization.Query(
+          'https://docs.google.com/spreadsheets/d/1ot4VJqenqtRGdI5QCImaVCUEiN_pRlWv/gviz/tq?gid=1949545316&headers=1&tq=' + queryString);
+      query.send(handleQueryResponseMapa);
+    }
+
+    function handleQueryResponseMapa(response) {
+      if (response.isError()) {
+        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+
+      var data = response.getDataTable();
+
+        var options = {title:'Mapa de salarios',
+                       width:400,
+                       height:300,
+                       region: 'MX',
+                       resolution: 'provinces',
+                       displayMode: 'regions',
+                      };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('mapa_salarios_chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+<!--Table and divs that hold the pie charts-->
+<table class="columns">
+    <tr>
+        <td><div id="histograma_salarios_chart_div" style="border: 1px solid #ccc"></div></td>
+    </tr>
+    <tr>
+        <td><div id="tendencia_salarios_chart_div" style="border: 1px solid #ccc"></div></td>
+    </tr>
+    <tr>
+        <td><div id="mapa_salarios_chart_div" style="border: 1px solid #ccc"></div></td>
+    </tr>
+</table>
+</body>
+</html>

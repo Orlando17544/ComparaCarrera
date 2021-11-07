@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="Preguntas frecuentes"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="¿De dónde provienen los datos que se utilizan para mostrar las gráficas?"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="Los datos vienen directamente de la Encuesta Nacional de Ocupación y Empleo (ENOE) y se pueden descargar de la página: https://www.inegi.org.mx/programas/enoe/15ymas/default.html#Microdatos"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:autoLink="web"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="¿Cada cuánto tiempo se realiza la encuesta?"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="La ENOE se realiza cada trimestre, pero debido a la pandemia la encuesta se ha detenido en los últimos dos trimestres."
+        android:textSize="12sp"
+        android:textStyle="normal"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="¿Cómo me puede ayudar la aplicación?"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="La aplicación está hecha para que una persona pueda conocer los salarios de la carrera que quiere estudiar de acuerdo a sus circunstancias particulares. Ejemplo: si la persona vive en Monterrey y quiere saber como son los salarios de alguien que estudió Derecho y lleva 4 años ejerciendo la profesión; la persona puede saberlo. (Usando el histograma de salarios)"
+        android:textSize="12sp"
+        android:textStyle="normal"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="¿En qué consiste el histograma de salarios?"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="Los datos se filtran usando las condiciones que tu proporcionas (salario mínimo, salario máximo, ciudad, sexo, etc) y a partir de esos datos se grafica el histograma usando los salarios mensuales de las personas. (Si no sabes que es un histograma lo puedes buscar en internet)"
+        android:textSize="12sp"
+        android:textStyle="normal"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="¿En qué consiste la tendencia de salarios?"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="Los datos se filtran usando las condiciones que tu proporcionas (salario mínimo, salario máximo, ciudad, sexo, etc), a partir de esos datos se agrupan por periodo, se calcula un promedio por periodo y se grafica. De tal manera que puedes saber como cambian los salarios a lo largo del tiempo, si hay una tendencia alcista o bajista."
+        android:textSize="12sp"
+        android:textStyle="normal"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="¿En qué consiste el mapa de salarios?"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="Los datos se filtran usando las condiciones que tu proporcionas (salario mínimo, salario máximo, ciudad, sexo, etc), a partir de esos datos se agrupan por estado, se calcula un promedio por estado y se grafica. De tal manera que puedes saber en qué estado de la república hay mejores salarios."
+        android:textSize="12sp"
+        android:textStyle="normal"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="La ENOE se aplica a todo tipo de personas, mientras tengan 15 años o más. ¿Se aplicó algún tipo de filtro para los datos?"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="Si, para que una persona sea considerada en la base de datos tiene que haber estudiado una licenciatura, tiene que ser asalariado (empleado) y tiene que dedicarse a un trabajo clasificado como profesional."
+        android:textSize="12sp"
+        android:textStyle="normal"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="No puedo encontrar mi carrera, ¿porque?"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:text="La ENOE clasificó las carreras contestadas por los encuestados usando la Clasificación Mexicana de Programas de Estudio por Campos de Formación Académica (CMPE). Por ejemplo si a dos personas se les preguntó que carrera estudiaron, y respondieron psicología social y psicología clínica, aunque son dos carreras diferentes ambas fueron clasificadas como psicología. Si te gustaría saber más de la clasificación a continuación te entrego un link: https://www.gob.mx/cms/uploads/attachment/file/643/Clasif_Prog_Est_21SEPT2011.pdf"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:autoLink="web"/>
+
+</LinearLayout>
+</ScrollView>
