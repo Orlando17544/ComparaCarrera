@@ -45,11 +45,9 @@ Create an application to analyze the labor market in Mexico. The user can select
 - GitHub 
 - Git 2.30.2
 
-Me quedé hasta aquí
-
 ## Install
 
-Just download the app on this [url](https://github.com/Orlando17544/Portfolio/raw/main/bookDroid.apk) and install it in an android phone.
+Just download the app on this [url](https://github.com/Orlando17544/Portfolio/raw/main/compareCareer.apk) and install it in an android phone.
 
 ---
 
@@ -57,7 +55,7 @@ Just download the app on this [url](https://github.com/Orlando17544/Portfolio/ra
 
 1. Clone the project
 ```
-git clone https://github.com/Orlando17544/BookDroid.git
+git clone https://github.com/Orlando17544/CompareCareer.git
 ```
 
 2. Start Android Studio
@@ -68,14 +66,4 @@ git clone https://github.com/Orlando17544/BookDroid.git
 
 ## Preview
 
-<img src="https://github.com/Orlando17544/Portfolio/blob/main/src/assets/bookDroid.gif" alt="Simplefolio" width="900px" />
-
-# ComparaCarrera
-Es un proyecto realizado en android nativo para que una persona que no sepa que estudiar pueda analizar el mercado laboral antes de tomar una desición.
-
-![1](https://github.com/Orlando17544/ComparaCarrera/blob/main/1.png)
-![2](https://github.com/Orlando17544/ComparaCarrera/blob/main/2.png)
-![3](https://github.com/Orlando17544/ComparaCarrera/blob/main/3.png)
-![4](https://github.com/Orlando17544/ComparaCarrera/blob/main/4.png)
-![5](https://github.com/Orlando17544/ComparaCarrera/blob/main/5.png)
-![6](https://github.com/Orlando17544/ComparaCarrera/blob/main/6.png)
+<img src="https://github.com/Orlando17544/Portfolio/blob/main/src/assets/compareCareer.gif" alt="Simplefolio" width="900px" />
